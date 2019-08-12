@@ -1,0 +1,19 @@
+<!-- candidate side card  -->
+<mat-card class="twitterCandidate-card">
+    <mat-card-header>
+     <mat-card-title>Twitter Info</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-subtitle>Username</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()"> 
+        <mat-form-field>
+            
+            <input type="text" matInput [(ngModel)]="user.username" placeholder="Enter your Twitter name" name="username">
+          </mat-form-field>
+          <mat-icon type="Submit" matSuffix>search</mat-icon>
+          <mat-card-actions><button mat-raised-button color="primary" button type="submit">Submit</button></mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card> 

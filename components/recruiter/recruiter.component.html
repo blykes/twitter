@@ -1,0 +1,21 @@
+<mat-card class="twitterRecruiter-card">
+    <mat-card-header>
+     <mat-card-title>Twitter Info</mat-card-title>
+      <mat-card-title>@{{twitterName}}</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-title-group>
+      <img mat-card-sm-image [src]="profilePic">
+    </mat-card-title-group>
+    
+    
+    <mat-card-content>
+        
+        <p>Profile name: {{displayName}}</p>
+        <p>Followers: {{followers}}</p>
+        <p>Following: {{following}}</p>
+        <p>Likes: {{likes}}</p>
+        <p>Location: {{location}}</p>
+        <p>Bio: {{bio}}</p>
+    </mat-card-content>
+  </mat-card> 
